@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: tradingAutomation
+
+server:
+  servlet:
+    context-path: /trading-automation
+
+upstox:
+  access-token: YOUR_ACCESS_TOKEN_HERE
+  oauth:
+    client-id: 0f754d6f-030e-41f2-bf1b-f6e926734bf0
+    client-secret: bxrua3f4vr
+    redirect-uri: http://localhost:8080/trading-automation/callback
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+
+trading:
+  automation:
+    base-url: https://api-hft.upstox.com
+    access-token: eyJ0eXAiOiJKV1QiLCJrZXlfaWQiOiJza192MS4wIiwiYWxnIjoiSFMyNTYifQ.eyJzdWIiOiI0NkJUWEMiLCJqdGkiOiI2OTkxZmJiOTRhMzdhNDc0ZDQxZTA3NWMiLCJpc011bHRpQ2xpZW50IjpmYWxzZSwiaXNQbHVzUGxhbiI6ZmFsc2UsImlhdCI6MTc3MTE3NDg0MSwiaXNzIjoidWRhcGktZ2F0ZXdheS1zZXJ2aWNlIiwiZXhwIjoxNzcxMTkyODAwfQ.-qI7IVDXoNyZxaVCdhrI4ilJcPmJD0xtltuBjUYBb9M
+    sandbox:
+      enabled: false
